@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f2f2f2;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 30px;
+            background: white;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="content">
+        <h2>Hello Users!</h2>
+        <p>Yeh ek simple website ka demo hai. Aap isko edit karke apni website bana sakte ho.</p>
+
+        <button class="btn" onclick="showMessage()">Click Me</button>
+
+        <p id="msg" style="font-size:18px; color:#333; margin-top:10px;"></p>
+    </div>
+
+    <footer>
+        © 2025 My Website | All Rights Reserved
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("msg").innerText = "Button Clicked! Welcome to my website 😊";
+        }
+    </script>
+
+</body>
+</html>
+
